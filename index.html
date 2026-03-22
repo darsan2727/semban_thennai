@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semban Thennai</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+/* HEADER */
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1604908554007-06c1c9c7c6b1');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 30px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* MAP */
+.map {
+  padding: 20px;
+}
+
+.map h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media(min-width:768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Semban Thennai</h1>
+</header>
+
+<section class="hero">
+  <h2>Fresh Coconuts Direct From Farm</h2>
+  <p>Natural • Pure • Farm Fresh</p>
+  <a href="https://wa.me/919842817277?text=Hi%20I%20want%20to%20order" class="btn">Order on WhatsApp</a>
+</section>
+
+<section class="products">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d">
+      <h3>Fresh Coconuts</h3>
+      <p>Direct from farm, high quality coconuts</p>
+      <a href="https://wa.me/919842817277?text=I%20want%20Fresh%20Coconuts" class="btn">Order</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1627485937980-221c88ac04f0">
+      <h3>Coconut Oil</h3>
+      <p>Pure cold pressed coconut oil</p>
+      <a href="https://wa.me/919842817277?text=I%20want%20Coconut%20Oil" class="btn">Order</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b">
+      <h3>Coconut Saplings</h3>
+      <p>Healthy saplings ready for planting</p>
+      <a href="https://wa.me/919842817277?text=I%20want%20Saplings" class="btn">Order</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="map">
+  <h2>Our Location</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Z21LBPPX6UnTwMBE6&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+</section>
+
+<footer>
+  <p>📞 9842817277 | 📷 semban_thennai</p>
+</footer>
+
+<a href="https://wa.me/919842817277" class="whatsapp">💬</a>
+
+</body>
+</html>
