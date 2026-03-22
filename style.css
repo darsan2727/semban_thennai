@@ -1,18 +1,28 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
-  background: #f8f9fa;
-  color: #333;
+  background: #f8fafc;
+  color: #222;
 }
 
 /* NAVBAR */
 nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.9);
   display: flex;
   justify-content: space-between;
+  padding: 15px 40px;
   align-items: center;
-  padding: 15px 30px;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
 nav img {
@@ -22,7 +32,7 @@ nav img {
 nav a {
   text-decoration: none;
   color: #333;
-  margin-left: 20px;
+  margin-left: 25px;
   font-weight: 500;
 }
 
@@ -32,87 +42,129 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
   url('https://images.unsplash.com/photo-1604908554007-06c1c9c7c6b1');
   background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 .hero p {
   margin: 15px 0;
+  font-size: 18px;
 }
 
 /* BUTTON */
 .btn {
-  background: #25D366;
-  padding: 12px 25px;
-  color: white;
+  background: linear-gradient(45deg,#25D366,#1ebe5d);
+  padding: 14px 30px;
   border-radius: 30px;
+  color: white;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #1ebe5d;
+  transform: scale(1.05);
 }
 
 /* SECTION */
 .section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
-/* PRODUCTS */
+/* GRID */
 .grid {
   display: grid;
-  gap: 25px;
+  gap: 30px;
 }
 
+@media(min-width:768px){
+  .grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* CARD */
 .card {
   background: white;
-  border-radius: 15px;
+  border-radius: 16px;
   overflow: hidden;
   transition: 0.3s;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
 }
 
-/* REVIEWS */
+/* TRUST */
+.trust {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media(min-width:768px){
+  .trust {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.badge {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* REVIEW */
 .review {
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+}
+
+/* MAP */
+.map iframe {
+  border-radius: 12px;
 }
 
 /* FOOTER */
 footer {
   background: #1b5e20;
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
-/* RESPONSIVE */
-@media(min-width:768px){
-  .grid {
-    grid-template-columns: repeat(3,1fr);
-  }
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
