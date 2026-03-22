@@ -1,188 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Semban Thennai Coconut Farm</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
-}
-
-/* NAVBAR */
-nav {
-  background: #1b5e20;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
-  align-items: center;
-}
-
-nav h1 {
-  margin: 0;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://images.unsplash.com/photo-1604908554007-06c1c9c7c6b1');
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h2 {
-  font-size: 32px;
-}
-
-.btn {
-  background: #25D366;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-/* PRODUCTS */
-.products {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.product-grid {
-  display: grid;
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-/* MAP */
-.map {
-  padding: 20px;
-}
-
-/* FOOTER */
-footer {
-  background: #1b5e20;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  padding: 15px;
-  border-radius: 50%;
-  color: white;
-  text-decoration: none;
-}
-
-/* RESPONSIVE */
-@media(min-width:768px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-</style>
-
+<title>Semban Thennai</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-  <h1>Semban Thennai</h1>
+  <div>Semban Thennai</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <section class="hero">
   <h2>Fresh Coconuts Direct From Farm</h2>
-  <p>Pure • Natural • Healthy</p>
   <a href="https://wa.me/919842817277" class="btn">Order on WhatsApp</a>
 </section>
 
-<section class="products">
-  <h2>Our Products</h2>
-
-  <div class="product-grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d">
-      <h3>Fresh Coconuts</h3>
-      <a href="https://wa.me/919842817277" class="btn">Order</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1627485937980-221c88ac04f0">
-      <h3>Coconut Oil</h3>
-      <a href="https://wa.me/919842817277" class="btn">Order</a>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b">
-      <h3>Coconut Saplings</h3>
-      <a href="https://wa.me/919842817277" class="btn">Order</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="map">
-  <h2 style="text-align:center;">Our Location</h2>
-
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.489124750642!2d78.3544375!3d12.2828125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac475deb871af5%3A0xa18d3117f89456e7!2sSemba%20Gounder%20thottam!5e0!3m2!1sen!2sin!4v1774184460590!5m2!1sen!2sin"
-    width="100%" 
-    height="350" 
-    style="border:0; border-radius:10px;"
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
-
-</section>
-  <p style="text-align:center; margin-top:10px;">
-📍 Semba Gounder Thottam, Tamil Nadu  
-<br>
-<a href="https://maps.app.goo.gl/QCpaud6cNL8iynXK6" target="_blank">
-Open in Google Maps
-</a>
-</p>
-
 <footer>
-  <p>📞 9842817277 | 📷 semban_thennai</p>
+  <p>📞 9842817277 | semban_thennai</p>
 </footer>
-
-<a href="https://wa.me/919842817277" class="whatsapp">💬</a>
 
 </body>
 </html>
